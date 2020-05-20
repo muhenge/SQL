@@ -18,3 +18,14 @@ SELECT name FROM world WHERE name LIKE '%o__o%'
 
 SELECT name FROM world WHERE name LIKE '____'
 
+SELECT name FROM world WHERE name = capital
+
+SELECT name FROM world WHERE capital = concat(name, 'City')
+
+SELECT capital, name FROM world WHERE capital LIKE concat('%', name, '%')
+
+SELECT capital, name FROM world WHERE capital LIKE concat(name,'_%')
+
+SELECT name, REPLACE(capital, name, '') FROM world WHERE capital LIKE concat(name,'_%')
+
+
